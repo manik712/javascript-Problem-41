@@ -16,9 +16,9 @@ function isAbsNumber(arr) {
   }
 }
 
-console.log(isAbsNumber([-3, 4, 6, 8, -9, -6, -5]));
+console.log(isAbsNumber([2, -1, 4, 8, 10]));
 
-
+//getAbsSum([2, -1, 4, 8, 10])
 
 //alternative   
 
