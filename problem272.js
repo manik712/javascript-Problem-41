@@ -20,7 +20,7 @@ console.log(isAbsNumber([2, -1, 4, 8, 10]));
 
 //getAbsSum([2, -1, 4, 8, 10])
 
-//alternative   
+//alternative    
 
 function isAbsNumber(arr) {
   let sum = 0;

@@ -12,5 +12,5 @@ function bomb(str){
    return findBomb;
 
 }
-console.log(bomb("There is a Bomb.")) //Duck!!!
+console.log(bomb("There is a B omb.")) //Duck!!!
 console.log(bomb("This goes boom!!!")) //There is no bomb, relax
