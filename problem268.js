@@ -24,3 +24,13 @@ function getOnlyEvens(arr) {
 
 console.log(getOnlyEvens([4, 8, 7, 4, 2, 1]));//[ 4, 8, 4, 2 ]
 
+  
+//alternative
+
+function getOnlyEvens(arr){
+  let evenarray=arr.map(a=>a%2===0 ? a:null).
+  filter(a=>a!==null)
+  return evenarray
+}
+
+console.log(getOnlyEvens([4,8,7,4,2,1])) //[ 4, 8, 4, 2 ]
