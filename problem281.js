@@ -1,6 +1,5 @@
-//Create a function that takes any non-negative number as an argument
-//and return it with its digits in descending order. Descending order
-//is when you sort from highest to lowest.
+//Create a function that takes a number and returns
+//its digits sorted in descending order.
 
 //Examples
 //sortDescending(123) ➞ 321
