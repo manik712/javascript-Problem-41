@@ -10,7 +10,8 @@ function sorts(str) {
   return number;
 }
 console.log(sorts(1234648)); //8644321
-console.log(sorts(12344563656)); //
+console.log(sorts(12344563656)); //66655443321
+console.log(sorts(12345345435)); //55544433321
 
 
 
