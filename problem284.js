@@ -16,3 +16,4 @@ function formatPhoneNumber(arr) {
  return phoneNumber;
 }
 console.log(formatPhoneNumber([1,2,3,7,8,9,3,4,5,0]))//"(123) 789-3450"
+console.log(formatPhoneNumber([1,2,3,7,5,8,3,2,9,3]))//"(123) 789-3450"
