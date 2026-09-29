@@ -5,5 +5,8 @@ function sorts(str) {
 
   let sortsArray = array1.sort((a, b) => b - a);
 
+  let joinElements = sortsArray.join("");
+  let number = Number(joinElements);
+  return number;
 }
-console.log(sorts(1234648));//8644321
+console.log(sorts(1234648)); //8644321
