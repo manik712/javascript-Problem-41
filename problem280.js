@@ -15,7 +15,7 @@
 //   { tile: "E", score: 1 }
 // ]
 
-function maximumScore(hand) {
+function maximumScores(hand) {
   let total = 0;
 
   for (let i = 0; i < hand.length; i++) {
@@ -25,7 +25,7 @@ function maximumScore(hand) {
   return total;
 }
 
-console.log(maximumScore([
+console.log(maximumScores([
   { tile: "N", score: 1 },
   { tile: "K", score: 5 },
   { tile: "Z", score: 10 },
@@ -33,4 +33,6 @@ console.log(maximumScore([
   { tile: "D", score: 2 },
   { tile: "A", score: 1 },
   { tile: "E", score: 1 }
-]));
+]));//28
+
+
