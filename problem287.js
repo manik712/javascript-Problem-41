@@ -8,6 +8,7 @@
 
 function factorial(num) {
   let result = 1;
+  //if the number is 0 or 1, return 1. Otherwise, multiply the number by the factorial of the number minus 1.
   if (num === 0 || num === 1) {
     return 1;
   } else {
@@ -15,6 +16,9 @@ function factorial(num) {
       result = result * i;
     }
   }
+  //return the result of the factorial calculation
   return result;
 }
+//test the function with the example provided
 console.log(factorial(5)); // 120
+console.log(factorial(3)); // 6
