@@ -3,7 +3,9 @@
 //reveal the message. Use the character class \D in your expression.
 
 function revealMessage(str) {
-  let sentence = str.replace(/[0-9]/g, "");
+  // let sentence = str.replace(/[0-9]/g, "");
+
+  let sentence = str.replace(/\d/g, "");
   return sentence;
 }
 
