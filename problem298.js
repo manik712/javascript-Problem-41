@@ -13,5 +13,4 @@ function secret(str){
   }
   return result;
 }
-
 console.log(secret("div*2")); // Output:
