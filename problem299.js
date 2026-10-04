@@ -16,4 +16,4 @@ function filterString(txt) {
   let specialCharacters = txt.match(/[^a-z A-Z 0-9]/g).length;
   return [upper, lower, numbers, specialCharacters];
 }
-console.log(filterString("**Airforce1**"));
+console.log(filterString("*$(#Mu12bas43hiR%@*!"));
