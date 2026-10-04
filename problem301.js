@@ -5,16 +5,10 @@
 // owofied("I'm gonna ride 'til I can't no more")
 // ➞ "I'm gonna rwidwe 'twil I can't no morwe owo"
 
-function owofied(sentence){
-  let result = 
-  sentence.replaceAll("i","wi")
-          .replaceAll("e","we")
- 
- 
- 
- 
- return `${result} owo.`
-  
+function owofied(sentence) {
+  let result = sentence.replaceAll("i", "wi").replaceAll("e", "we");
+
+  return `${result} owo.`;
 }
 
-console.log(owofied("this is my love"))
+console.log(owofied("this is my love"));
