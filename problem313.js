@@ -8,8 +8,19 @@
 // isValid("393939") ➞ false
 
 function isValid(zip) {
-  let result = zip.match(/[0-9]/g).length;
-  let zips = result == "5" ? true : false;
-  return zips;
+  let regex = /^\d{5}$/;
+  let result = regex.test(zip);
+  return result;
 }
-console.log(isValid("39300"))//true
+console.log(isValid("39300b")); //true
+
+
+
+
+function isValid(zip) {
+  let result = zip.match(/^\d{5}$/);
+
+  return result !== null;
+}
+
+console.log(isValid("3930")); // true
