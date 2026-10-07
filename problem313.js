@@ -12,7 +12,7 @@ function isValid(zip) {
   let result = regex.test(zip);
   return result;
 }
-console.log(isValid("39300b")); //true
+console.log(isValid("39300b")); //false
 
 
 
@@ -23,4 +23,4 @@ function isValid(zip) {
   return result !== null;
 }
 
-console.log(isValid("3930")); // true
+console.log(isValid("39308")); // true
