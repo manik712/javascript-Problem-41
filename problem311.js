@@ -1,5 +1,5 @@
 //Write a regular expression that matches only an even number.
-//  Numbers will be presented as strings.
+//Numbers will be presented as strings.
 
 // Examples
 // "2341" ➞ false
