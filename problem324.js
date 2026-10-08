@@ -24,3 +24,8 @@ function countTrue(arr) {
 console.log(countTrue([false, false, false])); //0
 console.log(countTrue([])); //0
 console.log(countTrue([false, false, false, true])); //1
+
+
+
+//alternative
+const countTrue = r => r.filter(Boolean).length
