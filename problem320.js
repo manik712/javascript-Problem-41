@@ -10,19 +10,33 @@
 // needsCharging([]) // []
 
 function needsCharging(arr) {
-  let arr1 = [];
-  for (let i = 0; i <= arr.length - 1; i++)
-    if (arr[i][1] < 20) {
-      arr1.push(arr[i][0]);
-    }
+  if (arr.length === 0) {
+    return [];
+  } else {
+    let arr1 = [];
+    for (let i = 0; i <= arr.length - 1; i++)
+      if (arr[i][1] < 20) {
+        arr1.push(arr[i][0]);
+      }
 
-  return arr1;
+    return arr1;
+  }
 }
 
 console.log(
   needsCharging([
     ["iPhone", 15],
-    ["MacBook", 80],
+    ["MacBook", 80], //[ 'iPhone', 'iPad' ]
     ["iPad", 19],
   ]),
-);//[ 'iPhone', 'iPad' ]
+);
+
+console.log(
+  needsCharging([
+    ["iPhone", 20], //[ 'iPad' ]
+    ["iPad", 0],
+  ]),
+);
+console.log(
+  needsCharging([]), //[]
+);
