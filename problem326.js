@@ -30,7 +30,7 @@ function progressBar(percent) {
   }
 }
 
-console.log(progressBar(9));   // ----------
-console.log(progressBar(10));  // #---------
-console.log(progressBar(49));  // ####------
+console.log(progressBar(9)); // ----------
+console.log(progressBar(10)); // #---------
+console.log(progressBar(49)); // ####------
 console.log(progressBar(100)); // ##########
