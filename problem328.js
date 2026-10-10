@@ -19,3 +19,7 @@ function minMax(arr) {
   return [minNumber, maxNumber];
 }
 console.log(minMax([2334454, 5])); //[ 5, 2334454 ]
+
+//alternative 
+
+const minMax = arr => [Math.min(...arr), Math.max(...arr)];
