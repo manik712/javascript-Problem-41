@@ -20,6 +20,6 @@ function minMax(arr) {
 }
 console.log(minMax([2334454, 5])); //[ 5, 2334454 ]
 
-//alternative 
+//alternative
 
-const minMax = arr => [Math.min(...arr), Math.max(...arr)];
+const minMax = (arr) => [Math.min(...arr), Math.max(...arr)];
