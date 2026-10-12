@@ -13,11 +13,12 @@ function balancesAfterChanges(starting, changes) {
     return [];
   } else {
     let arr = [];
+    let balance = starting;
     for (let i = 0; i <= changes.length - 1; i++) {
-      let result = changes[i] + starting;
-      arr.push(result);
+      balance = changes[i] + balance;
+      arr.push(balance);
     }
     return arr;
   }
 }
-console.log(balancesAfterChanges(10, []));//[]
+console.log(balancesAfterChanges(10, [5, -3, 2])); //[ 15, 12, 14 ]
