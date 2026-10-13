@@ -14,3 +14,16 @@ function nextBus(departures, now) {
 }
 
 console.log(nextBus(["08:00", "08:15", "08:30"], "08:5"));
+
+
+//alternative 
+
+function nextBus(departures, now) {
+  // Write your code here
+  for(const time of departures){
+    if(time>=now) return time;
+  }
+  return "none";
+}
+console.log(nextBus(["08:00", "08:15", "08:30"], "08:5"));// none
+
