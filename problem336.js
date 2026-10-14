@@ -22,3 +22,5 @@ function rowTotal(rows) {
   
   return totals;
 }
+//print the result 
+console.log(rowTotal([[2],[]]))//2
