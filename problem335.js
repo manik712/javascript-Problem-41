@@ -8,9 +8,19 @@
 // robotHome("LRUD") // true
 
 function robotHome(moves) {
-  let rex = /[udlr]/gi;
+  let x = 0;
+  let y = 0;
 
-  return moves.match(rex);
+  for (let move of moves) {
+    if (move === "R") x++;
+    if (move === "L") x--;
+    if (move === "U") y++;
+    if (move === "D") y--;
+  }
+
+  return x === 0 && y === 0;
 }
-console.log(robotHome("UU"));
 
+console.log(robotHome("LRUD")); // true
+console.log(robotHome("LLRR")); // true
+console.log(robotHome("UUD"));  // false
