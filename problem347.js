@@ -8,10 +8,14 @@
 // scoreInsertPosition([], 3) // 0
 
 function scoreInsertPosition(scores, new_score) {
-  for (let i = 0; i <= scores.length - 1; i++) {
-    if(scores[i]>=new_score) return i
+  if (scores.length === 0) {
+    return 0;
+  } else {
+    for (let i = 0; i <= scores.length - 1; i++) {
+      if (scores[i] >= new_score) return i;
+    }
   }
 }
 
 console.log(scoreInsertPosition([2, 4, 4, 7], 4));
-console.log(scoreInsertPosition([2,4,7], 5));
+console.log(scoreInsertPosition([2, 4, 7], 5));
