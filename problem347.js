@@ -14,6 +14,7 @@ function scoreInsertPosition(scores, new_score) {
     for (let i = 0; i <= scores.length - 1; i++) {
       if (scores[i] >= new_score) return i;
     }
+    return scores.length;
   }
 }
 
